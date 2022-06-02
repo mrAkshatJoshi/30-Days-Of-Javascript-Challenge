@@ -1,0 +1,59 @@
+//level1
+let string = '30 Days Of JavaScript ' //Q1
+console.log(string) //Q2
+console.log(string.length)//Q3
+string1 = string.toUpperCase()//Q4
+string2 = string.toLowerCase()//Q5
+string3 = string.substring(1)//Q6
+string4 = string.substring(0, 2)//Q7
+string5 = string.includes('Script')//Q8
+string6 = string.split()//Q9
+string7 = string.split(' ')//Q10
+let Q11 = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'//Q11
+string8 = Q11.split(',')
+string9 = string.replace('JavaScript', 'Python')//Q12
+string10 = string.charAt(15)//Q13
+string11 = string.charCodeAt(11)//Q14
+string12 = string.indexOf('a')//Q15
+string13 = string.lastIndexOf('a')//Q16
+string14 = String('You cannot end a sentence with because because because is a conjunction').indexOf('because')//Q17
+string15 = String('You cannot end a sentence with because because because is a conjunction').lastIndexOf('because')//Q18
+string16 = String('You cannot end a sentence with because because because is a conjunction').search('because')//Q19
+string17 = string.trim(' ')//Q20
+string18 = String(string).startsWith('30')//Q21
+string19 = String('JavaScript').endsWith('30 Days Of JavaScript')//Q22
+string20 = string.match(/a/gi)//Q23
+string21 = string.concat('Q24')//Q24
+string22 = string.repeat(2)//Q25
+//level2
+let string23 = String('The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.')//Q1
+let string24 = String('\"Love is not patronizing and charity isn\'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead.\"')//Q2
+let string25 = String('10')
+let string26 = Number(string25)//Q3
+let string27 = '9.8'
+let string28 = parseFloat(string27)
+let string29 = parseInt(string28+1)//Q4
+let string30 = ['python','jargon']
+let string31 = string30[0].search('on')
+let string32 = 'python and jargon'
+let string33 = string32.match(/on/gi)//Q5
+let string34 = String('I hope this course is not full of jargon')
+let string35 = string34.match(/jargon/gi)//Q6
+let string36 = Math.floor(Math.random()*100)//Q7
+let string37 = Math.floor((Math.random()*(100-50)+50))//random*(max-min)+min Q8
+let string38 = Math.floor(Math.random()*255)//Q9
+let string39 = String('JavaScript')
+let string40 = string39[Math.floor(Math.random()*9)]//Q10
+let string41 = String('1 1 1 1 1 \n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')//Q11
+let string42 = String('You cannot end a sentence with because because because is a conjunction')
+let string43 = string42.substr(30,24)//Q12
+//level3
+let string44 = String('Love is the best thing in this world. Some found their love and some are still looking for their love.')
+let string45 = string44.split('love').length //Q1
+let string46 = String('You cannot end a sentence with because because because is a conjunction')
+let string47 = string46.match(/because/gi).length//Q2
+const string48 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+let string49 = string48.replace(/\$/g,'').replace(/@/g,'').replace(/&/g,'').replace(/!/g,'').replace(/\?/g,'').replace(/\%/g,'').replace(/#/g,'')//Q3
+let string50 = String('He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.')
+let string51 = string50.match(/\d+/g)
+let string52 = parseInt(string51[0]) + parseInt(string51[1]) + parseInt(string51[2])//Q4
