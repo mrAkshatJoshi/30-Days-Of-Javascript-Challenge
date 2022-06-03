@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>30DaysOfJavaScript D5</title>
+</head>
+<script>
+//level 1
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+/*
+Q1) Declare an empty array;
+Q2) Declare an array with more than 5 number of elements
+Q3) Find the length of your array
+Q4) Get the first item, the middle item and the last item of the array
+Q5) Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+*/
+const arr_empty = []//Q1
+const arr_5elements = [1,2,3,4,5]//Q2
+const arr2 = arr1.length//Q3
+console.log(arr_q2[0],arr_q2[parseInt(arr_q2.length/2)],arr_q2[parseInt(arr_q2.length - 1)])//Q4
+const mixedDataTypes = [NaN,true,1,'a',null,[1,2]]//Q5
+const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']//Q6
+console.log(itCompanies)//Q7
+console.log(itCompanies.length)//Q8
+console.log(itCompanies[0],itCompanies[parseInt(itCompanies.length/2)],itCompanies[parseInt(itCompanies.length-1)])//Q9
+console.log(itCompanies[0]);
+console.log(itCompanies[1]);
+console.log(itCompanies[2]);
+console.log(itCompanies[3]);
+console.log(itCompanies[4]);
+console.log(itCompanies[5]);
+console.log(itCompanies[6]);//Q10
+console.log(itCompanies[0].toUpperCase());
+console.log(itCompanies[1].toUpperCase());
+console.log(itCompanies[2].toUpperCase());
+console.log(itCompanies[3].toUpperCase());
+console.log(itCompanies[4].toUpperCase());
+console.log(itCompanies[5].toUpperCase());
+console.log(itCompanies[6].toUpperCase());//Q11
+console.log(itCompanies.toString()+' are big IT companies.');//Q12
+if (itCompanies.includes('Google')){
+    console.log('Google is in the list')
+}
+else console.log('Google is not here')//Q13
+var Q14 = []
+for(let i=0; i<itCompanies.length;i++){
+    if(itCompanies[i].includes('oo')){
+        Q14[i] = itCompanies[i]
+    }
+}//Q14
+itCompanies.sort()//q15
+itCompanies.reverse()//Q16
+itCompanies.slice(0,3)//Q17
+itCompanies.slice(itCompanies.length-3,itCompanies.length)//Q18
+itCompanies.slice(parseInt(itCompanies.length/2))//q19
+itCompanies.shift()//Q20
+itCompanies.splice(parseInt(itCompanies.length/2)-1, 2)//Q21
+itCompanies.pop()//Q22
+itCompanies.splice()//Q23
+//level2
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let words = text.split(' ')
+console.log(words)
+console.log(words.length)//Q2
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+if(shoppingCart.includes('Meat') == false){
+    shoppingCart.unshift('Meat')
+}
+else console.log('Meat is already in your cart')//Q3-1
+if(shoppingCart.includes('Sugar') == false){
+      shoppingCart.push('Sugar')
+}else console.log('Sugar is already in your cart')//Q3-2
+if(shoppingCart.includes('Honey') == true){
+    shoppingCart.splice(shoppingCart.indexOf('Honey'), 1);
+}
+else console.log('You don\'t have honey in your cart')//Q3-3
+shoppingCart[shoppingCart.indexOf('Tea')] = 'Green Tea' //Q3-4
+if(countries.includes('Ethiopia') == true){
+    console.log('ETHIOPIA')
+}
+else countries.push('Ethiopia')//Q4
+if(webTechs.includes('Sass') == true){
+    console.log('Sass is a CSS preprocess')
+}
+else{
+    webTechs.push('Sass')
+    console.log(webTechs)
+}//Q5
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd)//Q6
+//level3
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+const min_age = ages[0]
+const max_age = ages[ages.length - 1]//Q1-1
+if(ages.length % 2 === 0){
+var median_age = (parseInt(ages[ages.length/2])+ parseInt(ages[ages.length/2 + 1]))/2
+}
+else var median_age = ages[(ages.length-1)/2]//Q1-2
+var sum_age = 0
+for (let i = 0; i < ages.length; i++) {
+    sum_age = parseInt(ages[i]) + parseInt(sum_age)   
+}
+let average_age = sum_age/(ages.length)//Q1-3
+let range = max_age - min_age //Q1-4
+Math.abs(min-average) < Math.abs(max-average)
+? console.log('Data is left skewed')
+: console.log('Data is right skewed')//q1-5
+let first10Countries = countries.slice(0, 10)
+console.log(first10Countries)//q2 
+if (countries.length % 2 === 0){
+   let firstMid = (countries.length)/2 -1
+   let secondMid = (countries.length)/2
+   console.log(countries[firstMid], countries[secondMid])
+} else console.log(countries[parseInt(countries.length/2)-1])//Q3
+countries.shift()
+console.log(countries);
+let firstHalf = countries.splice(0,countries.length/2);
+let anotherHalf = countries.splice(0, countries.length);
+console.log(anotherHalf);//Q4
+
+</script>
+<body>
+    
+
+    <!-- import your scripts here <script src="./main.js"></script> -->
+    
+</body>
+
+</html>
